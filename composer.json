@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "compile": [
+      "mkdir -m 755 data"
+    ]
+  }
+}
