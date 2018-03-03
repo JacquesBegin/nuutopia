@@ -6,7 +6,7 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import TaskBoard from './components/TaskBoard.js';
 import PostJob from './components/PostJob.js';
-import Details from './components/Details.js';
+// import Details from './components/Details.js';
 
 ReactDOM.render(
   <Router>
@@ -14,7 +14,7 @@ ReactDOM.render(
       <Route exact path="/" component={App} />
       <Route path="/taskboard" component={TaskBoard} />
       <Route path="/postjob" component={PostJob} />
-      <Route path="/details" component={Details} />
+      {/* <Route path="/details" component={Details} /> */}
     </div>
   </Router>
 , document.getElementById('root'));
