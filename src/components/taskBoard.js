@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
-import './styles.css';
 
-class App extends Component {
+class TaskBoard extends Component {
   render() {
     return (
       <div className="mainSection">
@@ -13,4 +10,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default TaskBoard;
