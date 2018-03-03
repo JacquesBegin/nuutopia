@@ -5,7 +5,6 @@ import './App.css';
 import './styles.css';
 import Header from './components/Header.js';
 import Button from 'antd/lib/button';
-import Menu from 'antd/lib/button';
 
 class App extends Component {
   render() {
