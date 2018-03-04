@@ -4,7 +4,7 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="288px" height="74px" viewBox="0 0 288 74" enable-background="new 0 0 288 74" xml:space="preserve">
 
-<path fill="#13474C" d="M11.089,17.253V55.74H3.813V4.812h6.621l26.337,38.487h0.146V4.812h7.275V55.74h-6.621L11.234,17.253H11.089
+<path fill="#21AA93" d="M11.089,17.253V55.74H3.813V4.812h6.621l26.337,38.487h0.146V4.812h7.275V55.74h-6.621L11.234,17.253H11.089
 	z">
 
   <animateTransform id="slide"
@@ -17,7 +17,7 @@
 
 </path>
 
-<path fill="#1C6975" d="M50.521,51.229V19.363h7.057v30.411h16.806V19.363h7.057v36.741H76.13l-1.746-2.983l-5.166,2.983H58.96
+<path fill="#21AA93" d="M50.521,51.229V19.363h7.057v30.411h16.806V19.363h7.057v36.741H76.13l-1.746-2.983l-5.166,2.983H58.96
 	L50.521,51.229z">
 
   <animateTransform id="slide"

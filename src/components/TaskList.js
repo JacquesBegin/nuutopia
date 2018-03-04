@@ -5,8 +5,17 @@ import Card from "antd/lib/card";
 import Icon from "antd/lib/icon";
 import List from "antd/lib/list";
 import message from "antd/lib/message";
+import Tasks from '../db/tasks.json';
 
 class TaskList extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: Tasks
+    }
+  }
+
 
   render() {
 
@@ -54,7 +63,7 @@ fetch(
     document.querySelector('.job-accepted').play();
   }
 
-    const data = [{ title: "Title 1" }, { title: "Title 2" }, { title: "Title 3" }, { title: "Title 4" }, { title: "Title 5" }, { title: "Title 6" }];
+    const data = this.state;
 
     return <div className="taskboardSection">
         <Header />
@@ -64,15 +73,15 @@ fetch(
         <div className="nuuWrapper">
         <List
           grid={{ gutter: 16, xs: 1, sm: 2, md: 2, lg: 3, xl: 4, xxl: 4 }}
-          dataSource={data}
+          dataSource={data.data}
           renderItem={item => (
             <List.Item>
               <Card title={item.title} extra={<a href="#" onClick={handleClick}>
                     Accept Job&nbsp;<Icon type="check-circle" />
                   </a>} style={{ width: 300 }}>
-                <p>Details: 6 hectres of crops need to be cultivated.</p>
+                <p>{item.description}</p>
                 <p>
-                  <Icon type="home" />&nbsp; Jupiter Farms, Sector 5B
+                  <Icon type="home" />&nbsp; {item.location}
                 </p>
               </Card>
             </List.Item>
