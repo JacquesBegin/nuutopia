@@ -7,7 +7,9 @@ class PostJob extends Component {
     return (
       <div className="postjobSection">
         <Header/>
+        <div className="nuuWrapper">
         Post a Job
+        </div>
       </div>
     );
   }

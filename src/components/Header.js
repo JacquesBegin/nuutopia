@@ -8,7 +8,7 @@ class Header extends Component {
   render() {
     return (
       <div className="headerSection">
-        <Menu mode="horizontal">
+        <Menu mode="horizontal" theme="dark">
           <Menu.Item><img className="logo" src={('./nuutopia-logo-final.svg')} /></Menu.Item>
           <Menu.Item><Link to="/">Home</Link></Menu.Item>
           <Menu.Item><Link to="/taskboard">Task Board</Link></Menu.Item>

@@ -12,7 +12,7 @@ class TaskBoard extends Component {
 
   function handleClick(e) {
     e.preventDefault();
-    
+
     message.info("Job has been accepted!");
 
 // Initiate transaction
@@ -38,7 +38,7 @@ fetch(
     method: "POST"
   }
 ).then(function() {
-  
+
 // Finalize transaction (mine)
     fetch("https://missionhack-coin.herokuapp.com/miner/mine", {
       body:
@@ -52,17 +52,21 @@ fetch(
 });
 
     document.querySelector('.job-accepted').play();
-  }  
+  }
 
-      const data = [{ title: "Title 1" }, { title: "Title 2" }, { title: "Title 3" }, { title: "Title 4" }, { title: "Title 5" }, { title: "Title 6" }];
+    const data = [{ title: "Title 1" }, { title: "Title 2" }, { title: "Title 3" }, { title: "Title 4" }, { title: "Title 5" }, { title: "Title 6" }];
 
     return <div className="taskboardSection">
         <Header />
         <audio class="job-accepted">
           <source src="job-accepted.mp3" />
         </audio>
-
-        <List grid={{ gutter: 16, xs: 1, sm: 2, md: 4, lg: 4, xl: 6, xxl: 3 }} dataSource={data} renderItem={item => <List.Item>
+        <div className="nuuWrapper">
+        <List
+          grid={{ gutter: 16, xs: 1, sm: 2, md: 2, lg: 3, xl: 6, xxl: 3 }}
+          dataSource={data}
+          renderItem={item => (
+            <List.Item>
               <Card title={item.title} extra={<a href="#" onClick={handleClick}>
                     Accept Job&nbsp;<Icon type="check-circle" />
                   </a>} style={{ width: 300 }}>
@@ -71,7 +75,10 @@ fetch(
                   <Icon type="home" />&nbsp; Jupiter Farms, Sector 5B
                 </p>
               </Card>
-            </List.Item>} />
+            </List.Item>
+            )}
+          />
+          </div>
       </div>;
   }
 }
