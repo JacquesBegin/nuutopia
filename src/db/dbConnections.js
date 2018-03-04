@@ -41,7 +41,7 @@ function addNewTask(form) {
     tempLocal = tempLocal.concat(data);
 
     localStorage.setItem("tasks", JSON.stringify(tempLocal));
-
+    window.location.href = "taskboard";
     //localStorage.setItem(tempVar, JSON.stringify(data));
 
   } else {
