@@ -11,8 +11,13 @@ class TaskList extends Component {
 
   constructor(props) {
     super(props);
+
+    if(!localStorage.getItem('tasks')) {
+      localStorage.setItem("tasks", JSON.stringify(Tasks));
+    }
+    
     this.state = {
-      data: Tasks
+      data: JSON.parse(localStorage.getItem('tasks'))
     }
   }
 

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Header from './Header.js';
 import dbConnect from '../db/dbConnections.js';
-import { Form, Icon, Input, Button, Dropdown, Menu, DatePicker, TimePicker } from 'antd';
+import { Form, Icon, Input, Button, Dropdown, Menu, DatePicker, TimePicker, Message } from 'antd';
 const { TextArea } = Input;
 const FormItem = Form.Item;
 const MonthPicker = DatePicker.MonthPicker;
@@ -85,7 +85,7 @@ class PostJob extends Component {
       return (<option key={Math.random()} value={loc.locationName}>{loc.locationName}</option>)
     });
     return (
-      <select value={this.state.locationSelected} onChange={this.handleLocationChange} >
+      <select name="location" value={this.state.locationSelected} onChange={this.handleLocationChange} >
         {options}
       </select>
     );
@@ -96,7 +96,7 @@ class PostJob extends Component {
       return (<option key={Math.random()} value={skill.skill}>{skill}</option>)
     });
     return (
-      <select value={this.state.skillSelected} onChange={this.handleSkillsetChange} >
+      <select name="skills" value={this.state.skillSelected} onChange={this.handleSkillsetChange} >
         {skills}
       </select>
     )
@@ -105,7 +105,7 @@ class PostJob extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     console.log("dbConnect: ", dbConnect);
-    dbConnect.addNewTask();
+    dbConnect.addNewTask(e.target.closest("form"));
   }
 
   render() {
@@ -121,7 +121,7 @@ class PostJob extends Component {
               <FormItem
                 label="Title"
               >
-                <Input type="text" value={this.state.title} onChange={this.handleTitleChange} />
+                <Input name="title" type="text" value={this.state.title} onChange={this.handleTitleChange} />
             </FormItem>
             <FormItem
               label="Location"
@@ -139,7 +139,7 @@ class PostJob extends Component {
             >
             {this.getSkillsetDropdown()}
             </FormItem>
-            <TextArea value={this.state.description} onChange={this.handleDescriptionChange} rows={4} />
+            <TextArea name="description" value={this.state.description} onChange={this.handleDescriptionChange} rows={4} />
             <br/>
             <input type="submit" value="Submit" />
           </Form>

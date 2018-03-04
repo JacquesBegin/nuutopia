@@ -19,7 +19,8 @@ function getTaskFromLocalStorage() {
   console.log("returnedData: ", JSON.parse(returnedData));
 }
 
-function addNewTask() {
+function addNewTask(form) {
+  console.log(form)
   if (verifyLocalStorage()){
     let tempId = Math.random();
     let taskId = "nuutopiaTasks" + tempId;
@@ -30,11 +31,18 @@ function addNewTask() {
     // }
 
     let data = {
-      id: 1111,
-      title: "Task Title"
+      id: Math.floor(Math.random() * 2000),
+      title: form.querySelector('input[name="title"]').value,
+      location: form.querySelector('select[name="location"]').value,
+      description: form.querySelector('textarea[name="description"]').value
     }
 
-    localStorage.setItem(tempVar, JSON.stringify(data));
+    let tempLocal = JSON.parse(localStorage.getItem("tasks"));
+    tempLocal = tempLocal.concat(data);
+
+    localStorage.setItem("tasks", JSON.stringify(tempLocal));
+
+    //localStorage.setItem(tempVar, JSON.stringify(data));
 
   } else {
     return false;
