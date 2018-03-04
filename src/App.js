@@ -4,7 +4,7 @@ import logo from './logo.svg';
 import './App.css';
 import './styles.css';
 import Header from './components/Header.js';
-
+import Button from 'antd/lib/button';
 
 class App extends Component {
   render() {
@@ -12,10 +12,11 @@ class App extends Component {
       <div className="mainSection">
         <Header />
         <audio autoPlay>
-          {/* <source src="welcome.mp3" /> */}
+          <source src="welcome.mp3" />
         </audio>
-        <div className="welcome">
-          Welcome to Nuutopia. We are glad that you are part of our the community. Help your neighbors by completing tasks they share. Keep our community healthy by helping your neighbors today.
+        <div className="nuuWrapper">
+        <p>Welcome to Nuutopia. We are glad that you are part of our community. Help your neighbors by completing tasks they share. Keep our community healthy by helping your neighbors today.</p>
+        <Button type="primary"><Link to="/taskboard">Enter</Link></Button>
         </div>
       </div>
     );

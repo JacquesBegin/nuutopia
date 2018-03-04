@@ -59,7 +59,7 @@ class PostJob extends Component {
   getLocationDropdown = () => {
     let options = this.state.location.map((loc) => {
       return (<option key={Math.random()} value={loc.locationName}>{loc.locationName}</option>)
-    });   
+    });
     return (
       <select value={this.state.locationSelected} onChange={this.handleLocationChange} >
         {options}
@@ -82,21 +82,21 @@ class PostJob extends Component {
     return (
       <div className="postjobSection">
         <Header/>
-        Post a Task
-        <form onSubmit={this.handleSubmit}>
-          <label>
-            Title:
-            <input type="text" value={this.state.title} onChange={this.handleTitleChange} />
-          </label>
-          {this.getLocationDropdown()}
-          <input type="date" name="postDate" />
-          {this.getSkillsetDropdown()}
-          <textarea value={this.state.description} onChange={this.handleDescriptionChange} />
-          <br/>
-          <input type="submit" value="Submit" />
-        </form>
-
-
+        <div className="nuuWrapper">
+          Post a Task
+          <form onSubmit={this.handleSubmit}>
+            <label>
+              Title:
+              <input type="text" value={this.state.title} onChange={this.handleTitleChange} />
+            </label>
+            {this.getLocationDropdown()}
+            <input type="date" name="postDate" />
+            {this.getSkillsetDropdown()}
+            <textarea value={this.state.description} onChange={this.handleDescriptionChange} />
+            <br/>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
       </div>
     );
   }
