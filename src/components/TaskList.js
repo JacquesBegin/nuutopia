@@ -58,7 +58,7 @@ fetch(
 
     return <div className="taskboardSection">
         <Header />
-        <audio class="job-accepted">
+        <audio className="job-accepted">
           <source src="job-accepted.mp3" />
         </audio>
         <div className="nuuWrapper">
