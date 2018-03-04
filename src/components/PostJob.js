@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Header from './Header.js';
+import { Form, Icon, Input, Button } from 'antd';
+const FormItem = Form.Item;
 
 class PostJob extends Component {
 
