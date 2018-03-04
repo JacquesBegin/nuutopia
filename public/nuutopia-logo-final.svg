@@ -11,6 +11,7 @@
   attributeName="transform"
   attributeType="XML"
   type="translate"
+  begin="0.1"
   dur="1.5s"
   values="0,6;0,-6;0,6"
   repeatCount="indefinite"/>
@@ -24,6 +25,7 @@
   attributeName="transform"
   attributeType="XML"
   type="translate"
+  begin="0.2"
   dur="1.5s"
   values="0,6;0,-6;0,6"
   repeatCount="indefinite"/>
@@ -37,7 +39,7 @@
   attributeName="transform"
   attributeType="XML"
   type="translate"
-  begin="0.1"
+  begin="0.3"
   dur="1.5s"
   values="0,6;0,-6;0,6"
   repeatCount="indefinite"/>
@@ -51,7 +53,7 @@
   attributeName="transform"
   attributeType="XML"
   type="translate"
-  begin="0.2"
+  begin="0.4"
   dur="1.5s"
   values="0,6;0,-6;0,6"
   repeatCount="indefinite"/>
@@ -65,7 +67,7 @@
   attributeName="transform"
   attributeType="XML"
   type="translate"
-  begin="0.3"
+  begin="0.5"
   dur="1.5s"
   values="0,6;0,-6;0,6"
   repeatCount="indefinite"/>
@@ -79,7 +81,7 @@
   attributeName="transform"
   attributeType="XML"
   type="translate"
-  begin="0.4"
+  begin="0.6"
   dur="1.5s"
   values="0,6;0,-6;0,6"
   repeatCount="indefinite"/>
@@ -92,7 +94,7 @@
   attributeName="transform"
   attributeType="XML"
   type="translate"
-  begin="0.5"
+  begin="0.7"
   dur="1.5s"
   values="0,6;0,-6;0,6"
   repeatCount="indefinite"/>
@@ -106,7 +108,7 @@
   attributeName="transform"
   attributeType="XML"
   type="translate"
-  begin="0.6"
+  begin="0.8"
   dur="1.5s"
   values="0,6;0,-6;0,6"
   repeatCount="indefinite"/>

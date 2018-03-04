@@ -15,7 +15,7 @@ class TaskList extends Component {
     if(!localStorage.getItem('tasks')) {
       localStorage.setItem("tasks", JSON.stringify(Tasks));
     }
-    
+
     this.state = {
       data: JSON.parse(localStorage.getItem('tasks'))
     }
@@ -27,7 +27,7 @@ class TaskList extends Component {
   function handleClick(e) {
     e.preventDefault();
 
-    message.info("Job accepted!");
+    message.info("Task accepted!");
 
 // Initiate transaction
 
@@ -82,7 +82,7 @@ fetch(
           renderItem={item => (
             <List.Item>
               <Card title={item.title} extra={<a href="#" onClick={handleClick}>
-                    Accept Job&nbsp;<Icon type="check-circle" />
+                    Accept Task&nbsp;<Icon type="check-circle" />
                   </a>} style={{ width: 300 }}>
                 <p>{item.description}</p>
                 <p>
