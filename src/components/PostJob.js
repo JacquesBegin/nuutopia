@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Header from './Header.js';
-import { Form, Icon, Input, Button } from 'antd';
+import { Form, Icon, Input, Button, Dropdown, Menu, DatePicker, TimePicker } from 'antd';
+const { TextArea } = Input;
 const FormItem = Form.Item;
+const MonthPicker = DatePicker.MonthPicker;
+const RangePicker = DatePicker.RangePicker;
 
 class PostJob extends Component {
 
@@ -58,6 +61,22 @@ class PostJob extends Component {
     this.setState({description: e.target.value});
   }
 
+  handleMenuClick = (e) => {
+    // this.setState({locationSelected: e.target.value});
+    console.log(e);
+  }
+
+  // getLocationDropdown = () => {
+  //   let options = this.state.location.map((loc) => {
+  //     return (<Menu.Item key={Math.random()} value={loc.locationName}>{loc.locationName}</Menu.Item>)
+  //   });
+  //   return (
+  //     <Menu value={this.state.locationSelected} onClick={this.handleMenuClick}>
+  //       {options}
+  //     </Menu>
+  //   );
+  // }
+
   getLocationDropdown = () => {
     let options = this.state.location.map((loc) => {
       return (<option key={Math.random()} value={loc.locationName}>{loc.locationName}</option>)
@@ -81,23 +100,40 @@ class PostJob extends Component {
   }
 
   render() {
+    const rangeConfig = {
+      rules: [{ type: 'array', required: true, message: 'Please select time!' }],
+    };
     return (
       <div className="postjobSection">
         <Header/>
         <div className="nuuWrapper">
-          Post a Task
-          <form onSubmit={this.handleSubmit}>
-            <label>
-              Title:
-              <input type="text" value={this.state.title} onChange={this.handleTitleChange} />
-            </label>
-            {this.getLocationDropdown()}
-            <input type="date" name="postDate" />
+          <h1>Post a Task</h1>
+            <Form onSubmit={this.handleSubmit}>
+              <FormItem
+                label="Title"
+              >
+                <Input type="text" value={this.state.title} onChange={this.handleTitleChange} />
+            </FormItem>
+            <FormItem
+              label="Location"
+            >
+              {this.getLocationDropdown()}
+
+            </FormItem>
+            <FormItem
+              label="RangePicker"
+            >
+                <RangePicker />
+            </FormItem>
+            <FormItem
+              label="Skills"
+            >
             {this.getSkillsetDropdown()}
-            <textarea value={this.state.description} onChange={this.handleDescriptionChange} />
+            </FormItem>
+            <TextArea value={this.state.description} onChange={this.handleDescriptionChange} rows={4} />
             <br/>
             <input type="submit" value="Submit" />
-          </form>
+          </Form>
         </div>
       </div>
     );

@@ -63,7 +63,7 @@ fetch(
         </audio>
         <div className="nuuWrapper">
         <List
-          grid={{ gutter: 16, xs: 1, sm: 2, md: 2, lg: 3, xl: 6, xxl: 3 }}
+          grid={{ gutter: 16, xs: 1, sm: 2, md: 2, lg: 3, xl: 4, xxl: 4 }}
           dataSource={data}
           renderItem={item => (
             <List.Item>
