@@ -115,7 +115,7 @@ class PostJob extends Component {
     return (
       <div className="postjobSection">
         <Header/>
-        <div className="nuuWrapper">
+        <div className="formWrapper">
           <h1>Post a Task</h1>
             <Form onSubmit={this.handleSubmit}>
               <FormItem
