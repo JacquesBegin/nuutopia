@@ -16,25 +16,61 @@ class PostJob extends Component {
       title: "Post Title Here",
       location: [
         {
-          locationName: "1st Quadrant"
+          locationName: "1A"
         },
         {
-          locationName: "2nd Quadrant"
+          locationName: "1B"
         },
         {
-          locationName: "3rd Quadrant"
+          locationName: "1C"
         },
         {
-          locationName: "4th Quadrant"
+          locationName: "1D"
+        },
+        {
+          locationName: "2A"
+        },
+        {
+          locationName: "2B"
+        },
+        {
+          locationName: "2C"
+        },
+        {
+          locationName: "2D"
+        },
+        {
+          locationName: "3A"
+        },
+        {
+          locationName: "3B"
+        },
+        {
+          locationName: "3C"
+        },
+        {
+          locationName: "3D"
+        },
+        {
+          locationName: "4A"
+        },
+        {
+          locationName: "4B"
+        },
+        {
+          locationName: "4C"
+        },
+        {
+          locationName: "4D"
         }
       ],
       skillsets: [
-        "Skill 1",
-        "Skill 2",
-        "Skill 3",
-        "Skill 4",
-        "Skill 5",
-        "Skill 6"
+        "Heat Immunity",
+        "Damage resistance",
+        "Cat-like reflexes",
+        "Invulnerability",
+        "Omnilinguilism",
+        "Superhuman Strength"
       ],
       locationSelected: "1st Quadrant",
       skillSelected: "Skill 1",
