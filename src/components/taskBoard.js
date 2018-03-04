@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from './Header.js';
 import Card from "antd/lib/card";
 import Icon from "antd/lib/icon";
+import List from "antd/lib/list";
 import message from "antd/lib/message";
 
 class TaskBoard extends Component {
@@ -53,47 +54,24 @@ fetch(
     document.querySelector('.job-accepted').play();
   }  
 
+      const data = [{ title: "Title 1" }, { title: "Title 2" }, { title: "Title 3" }, { title: "Title 4" }, { title: "Title 5" }, { title: "Title 6" }];
+
     return <div className="taskboardSection">
         <Header />
         <audio class="job-accepted">
           <source src="job-accepted.mp3" />
         </audio>
-        <Card title="Cultivate the crops" extra={<a href="#" onClick={handleClick}>
-              Accept Job&nbsp;<Icon type="check-circle" />
-            </a>} style={{ width: 300 }}>
-          <p>Details: 6 hectres of crops need to be cultivated.</p>
-          <p>
-            <Icon type="home" />&nbsp; Jupiter Farms, Sector 5B
-          </p>
-        </Card>
-        <Card title="Card title" extra={<a href="#">
-              Accept Job
-            </a>} style={{ width: 300 }}>
-          <p>Card content</p>
-          <p>Card content</p>
-          <p>Card content</p>
-        </Card>
-        <Card title="Card title" extra={<a href="#">
-              Accept Job
-            </a>} style={{ width: 300 }}>
-          <p>Card content</p>
-          <p>Card content</p>
-          <p>Card content</p>
-        </Card>
-        <Card title="Card title" extra={<a href="#">
-              Accept Job
-            </a>} style={{ width: 300 }}>
-          <p>Card content</p>
-          <p>Card content</p>
-          <p>Card content</p>
-        </Card>
-        <Card title="Card title" extra={<a href="#">
-              Accept Job
-            </a>} style={{ width: 300 }}>
-          <p>Card content</p>
-          <p>Card content</p>
-          <p>Card content</p>
-        </Card>
+
+        <List grid={{ gutter: 16, xs: 1, sm: 2, md: 4, lg: 4, xl: 6, xxl: 3 }} dataSource={data} renderItem={item => <List.Item>
+              <Card title={item.title} extra={<a href="#" onClick={handleClick}>
+                    Accept Job&nbsp;<Icon type="check-circle" />
+                  </a>} style={{ width: 300 }}>
+                <p>Details: 6 hectres of crops need to be cultivated.</p>
+                <p>
+                  <Icon type="home" />&nbsp; Jupiter Farms, Sector 5B
+                </p>
+              </Card>
+            </List.Item>} />
       </div>;
   }
 }
