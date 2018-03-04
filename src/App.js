@@ -14,7 +14,7 @@ class App extends Component {
         <audio autoPlay>
           <source src="welcome.mp3" />
         </audio>
-        <div className="nuuWrapper">
+        <div className="welcomeWrapper">
         <p>Welcome to Nuutopia. We are glad that you are part of our community. Help your neighbors by completing tasks they share. Keep our community healthy by helping your neighbors today.</p>
         <Button type="primary"><Link to="/taskboard">Enter</Link></Button>
         </div>
