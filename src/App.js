@@ -12,7 +12,7 @@ class App extends Component {
       <div className="mainSection">
         <Header />
         <audio autoPlay>
-        {/* <source src="welcome.mp3" /> */}
+          {/* <source src="welcome.mp3" /> */}
         </audio>
         <div className="welcome">
           Welcome to Nuutopia. We are glad that you are part of our the community. Help your neighbors by completing tasks they share. Keep our community healthy by helping your neighbors today.
