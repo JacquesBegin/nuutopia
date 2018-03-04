@@ -3,7 +3,7 @@
     "id": 777,
     "user_id": 333,
     "title": "Piano Lessons",
-    "location": "1st Quadrant",
+    "location": "1A",
     "date": "Sept 19, 2067",
     "skillsets": [
       "Good with Children",
@@ -16,7 +16,7 @@
     "id": 778,
     "user_id": 334,
     "title": "Plant flowers",
-    "location": "3rd Quadrant",
+    "location": "3B",
     "date": "Sept 21, 2067",
     "skillsets": [
       "Green Thumb",
@@ -29,7 +29,7 @@
     "id": 779,
     "user_id": 335,
     "title": "Help Elderly with groceries",
-    "location": "4th Quadrant",
+    "location": "4C",
     "date": "Sept 17, 2067",
     "skillsets": [
       "Strength",
@@ -42,7 +42,7 @@
     "id": 780,
     "user_id": 336,
     "title": "Run Arts and Crafts at community centre",
-    "location": "1st Quadrant",
+    "location": "1C",
     "date": "Sept 17, 2067",
     "skillsets": [
       "Good with kids",
@@ -55,7 +55,7 @@
     "id": 781,
     "user_id": 337,
     "title": "Camp Counselor",
-    "location": "2nd Quadrant",
+    "location": "2B",
     "date": "Sept 20, 2067",
     "skillsets": [
       "Innovative",
