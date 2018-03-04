@@ -45,8 +45,8 @@ class PostJob extends Component {
 
   }
 
-  handleTitleChange = () => {
-
+  handleTitleChange = (e) => {
+    this.setState({title: e.target.value});
   }
 
   handleLocationChange = (e) => {
@@ -121,9 +121,9 @@ class PostJob extends Component {
 
             </FormItem>
             <FormItem
-              label="RangePicker"
+              label="Date"
             >
-                <RangePicker />
+                <DatePicker />
             </FormItem>
             <FormItem
               label="Skills"
