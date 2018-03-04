@@ -6,7 +6,7 @@ import Icon from "antd/lib/icon";
 import List from "antd/lib/list";
 import message from "antd/lib/message";
 
-class TaskBoard extends Component {
+class TaskList extends Component {
 
   render() {
 
@@ -58,12 +58,12 @@ fetch(
 
     return <div className="taskboardSection">
         <Header />
-        <audio class="job-accepted">
+        <audio className="job-accepted">
           <source src="job-accepted.mp3" />
         </audio>
         <div className="nuuWrapper">
         <List
-          grid={{ gutter: 16, xs: 1, sm: 2, md: 2, lg: 3, xl: 6, xxl: 3 }}
+          grid={{ gutter: 16, xs: 1, sm: 2, md: 2, lg: 3, xl: 4, xxl: 4 }}
           dataSource={data}
           renderItem={item => (
             <List.Item>
@@ -83,4 +83,4 @@ fetch(
   }
 }
 
-export default TaskBoard;
+export default TaskList;

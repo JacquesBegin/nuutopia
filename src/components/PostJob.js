@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Header from './Header.js';
+import dbConnect from '../db/dbConnections.js';
 
 class PostJob extends Component {
 
@@ -35,9 +36,11 @@ class PostJob extends Component {
       description: "Task Description"
     };
 
+    this.handleTitleChange = this.handleTitleChange.bind(this);
     this.handleLocationChange = this.handleLocationChange.bind(this);
     this.handleSkillsetChange = this.handleSkillsetChange.bind(this);
-
+    this.handleDescriptionChange = this.handleDescriptionChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleTitleChange = () => {
@@ -76,6 +79,12 @@ class PostJob extends Component {
         {skills}
       </select>
     )
+  }
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("dbConnect: ", dbConnect);
+    dbConnect.addNewTask();
   }
 
   render() {
