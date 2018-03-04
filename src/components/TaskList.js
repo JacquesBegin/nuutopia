@@ -22,7 +22,7 @@ class TaskList extends Component {
   function handleClick(e) {
     e.preventDefault();
 
-    message.info("Job has been accepted!");
+    message.info("Job accepted!");
 
 // Initiate transaction
 

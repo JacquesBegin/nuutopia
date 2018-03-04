@@ -13,6 +13,7 @@ class Header extends Component {
           <Menu.Item><Link to="/">Home</Link></Menu.Item>
           <Menu.Item><Link to="/taskboard">Task Board</Link></Menu.Item>
           <Menu.Item><Link to="/postjob">Post a Job</Link></Menu.Item>
+          <Menu.Item><a target="_blank" href="https://missionhack-coin.herokuapp.com/blockchain">Blockchain Explorer</a></Menu.Item>
         </Menu>
       </div>
     );
