@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="288px" height="74px" viewBox="0 0 288 74" enable-background="new 0 0 288 74" xml:space="preserve">
+
+<path fill="#13474C" d="M11.089,17.253V55.74H3.813V4.812h6.621l26.337,38.487h0.146V4.812h7.275V55.74h-6.621L11.234,17.253H11.089
+	z">
+
+  <animateTransform id="slide"
+  attributeName="transform"
+  attributeType="XML"
+  type="translate"
+  dur="1.5s"
+  values="0,6;0,-6;0,6"
+  repeatCount="indefinite"/>
+
+</path>
+
+<path fill="#1C6975" d="M50.521,51.229V19.363h7.057v30.411h16.806V19.363h7.057v36.741H76.13l-1.746-2.983l-5.166,2.983H58.96
+	L50.521,51.229z">
+
+  <animateTransform id="slide"
+  attributeName="transform"
+  attributeType="XML"
+  type="translate"
+  dur="1.5s"
+  values="0,6;0,-6;0,6"
+  repeatCount="indefinite"/>
+
+</path>
+
+<path fill="#21AA93" d="M90.171,51.229V19.363h7.057v30.411h16.806V19.363h7.057v36.741h-5.311l-1.746-2.983l-5.166,2.983H98.61
+	L90.171,51.229z">
+
+  <animateTransform id="slide"
+  attributeName="transform"
+  attributeType="XML"
+  type="translate"
+  begin="0.1"
+  dur="1.5s"
+  values="0,6;0,-6;0,6"
+  repeatCount="indefinite"/>
+
+</path>
+
+<path fill="#EDEA61" d="M126.911,25.693v-6.33h6.693v-6.111l7.057-4.074v10.186h8.731v6.33h-8.731v23.718h8.731v6.33h-7.349
+	l-8.439-4.875V25.693H126.911z">
+
+  <animateTransform id="slide"
+  attributeName="transform"
+  attributeType="XML"
+  type="translate"
+  begin="0.2"
+  dur="1.5s"
+  values="0,6;0,-6;0,6"
+  repeatCount="indefinite"/>
+
+</path>
+
+<path fill="#F2BE61" d="M187.588,51.229l-8.439,4.875h-14.042l-8.439-4.875V23.874L165.106,19h14.042l8.439,4.875V51.229z
+	 M163.725,25.329v24.445h16.806V25.329H163.725z">
+
+   <animateTransform id="slide"
+  attributeName="transform"
+  attributeType="XML"
+  type="translate"
+  begin="0.3"
+  dur="1.5s"
+  values="0,6;0,-6;0,6"
+  repeatCount="indefinite"/>
+
+</path>
+
+<path fill="#F48C5F" d="M219.09,56.104h-10.986l-5.165-2.983v17.17h-7.058V19h5.312l1.746,2.983L208.104,19h10.986l8.439,4.875
+	v27.355L219.09,56.104z M202.938,25.329v24.445h17.533V25.329H202.938z">
+
+  <animateTransform id="slide"
+  attributeName="transform"
+  attributeType="XML"
+  type="translate"
+  begin="0.4"
+  dur="1.5s"
+  values="0,6;0,-6;0,6"
+  repeatCount="indefinite"/>
+
+</path>
+
+<path fill="#D55544" d="M235.75,10.415V2.63h7.784v7.785H235.75z M243.171,19.363V55.74h-7.058V19.363H243.171z">
+
+  <animateTransform id="slide"
+  attributeName="transform"
+  attributeType="XML"
+  type="translate"
+  begin="0.5"
+  dur="1.5s"
+  values="0,6;0,-6;0,6"
+  repeatCount="indefinite"/>
+
+</path>
+
+<path fill="#B55544" d="M258.884,56.104l-8.439-4.875V39.371l8.439-4.875h13.241v-8.803h-18.043v-6.33h16.661l8.439,4.875v31.867
+	h-1.892l-5.166-2.983l-5.165,2.983H258.884z M257.502,40.826v8.949h14.623v-8.949H257.502z">
+
+  <animateTransform id="slide"
+  attributeName="transform"
+  attributeType="XML"
+  type="translate"
+  begin="0.6"
+  dur="1.5s"
+  values="0,6;0,-6;0,6"
+  repeatCount="indefinite"/>
+
+</path>
+</svg>
+
+

@@ -9,6 +9,7 @@ class Header extends Component {
     return (
       <div className="headerSection">
         <Menu mode="horizontal">
+          <Menu.Item><img className="logo" src={('./nuutopia-logo-final.svg')} /></Menu.Item>
           <Menu.Item><Link to="/">Home</Link></Menu.Item>
           <Menu.Item><Link to="/taskboard">Task Board</Link></Menu.Item>
           <Menu.Item><Link to="/postjob">Post a Job</Link></Menu.Item>
